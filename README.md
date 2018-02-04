@@ -9,11 +9,11 @@
 ## Dependencies
 * Java 1.7 or higher
 * Maven 3.2 or higher
-* Selenuim Web Driver 3.8.1 
 ## Prerequisites
 * To work on Chrome Webdriver , you will need to install the following on your development machine.
   * Download Chrome drive from http://www.seleniumhq.org/download/
-  * Copy Chromedriver.exe file to /SampleDemo/resources/
+  * First clone the SampleDemo Project from git 
+  * Then Copy Chromedriver.exe file to /SampleDemo/resources/
 ## Developing
 * git clone https://github.com/djeshmin/testDemo.git
 * cd to /testDemo/SampleDemo
