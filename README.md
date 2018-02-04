@@ -5,7 +5,7 @@
 * There are 3 exercises from General scripting / logic Questions. 
   * First exercise : Reverse Functionality for given string
   * Second exercise : It will Print Food elements from Webpage 
-  * Third exercise : File exist functinality and it will display words from the file
+  * Third exercise : File exists functionality and it will display words from the file
 ## Dependencies
 * Java 1.7 or higher
 * Maven 3.2 or higher
