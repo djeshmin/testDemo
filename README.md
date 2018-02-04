@@ -13,13 +13,22 @@
 ## Prerequisites
 * To work on Chrome Webdriver , you will need to install the following on your development machine.
   * Download Chrome drive from http://www.seleniumhq.org/download/
-  * Copy Chromedriver.exe file to /SampleDemo/Webdrivers/
+  * Copy Chromedriver.exe file to /SampleDemo/resources/
 ## Developing
 * git clone https://github.com/djeshmin/testDemo.git
 * cd to /testDemo/SampleDemo
-* mvn clean package 
+* mvn clean install package 
 ## How to run 3 exercises
 * General scripting / logic
-* Question 1 : Plaese run RunReserve.java
-* Question 2 : Please run DispalayFood.java
-* Question 3 : Please run RunWordfile.java 
+* Question 1 : 
+  * Cd to SampleDemo/target . 
+    * execute following command
+      * $ java -jar RunReverse.jar
+* Question 2 : 
+  * Cd to SampleDemo/target . 
+    * execute following command
+      * $ java -jar RunDisplayFood.jar
+* Question 3 : 
+  * Cd to SampleDemo/target . 
+    * execute following command
+      * $ java -jar RunWordFile.jar
