@@ -10,7 +10,7 @@ public class RunReverse
 {
     public static void main( String[] args )
     {
-    	 System.out.println( "Excesise 1 demo " );
+    	 System.out.println( "Exercises 1 demo " );
 
          
          // Initialing Scanner for user input 

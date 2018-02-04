@@ -17,6 +17,7 @@ public class RunWordFile {
 	    String file ="src/main/java/resource/datafile/Wordfile.txt";
 		
 		WordFile f = new WordFile();
+		System.out.println("Exercises 3  Demo");
 	    f.doesFileExist(f.getAbsoluteFilePath(file));
 	    f.readfile();
 	   
