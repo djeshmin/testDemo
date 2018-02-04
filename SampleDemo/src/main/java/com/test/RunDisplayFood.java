@@ -12,13 +12,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * @author Dilara
  *
  */
-public class DispalyFood {
+public class RunDisplayFood {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		File Chromefile = new File("Webdrivers/chromedriver.exe");
+		File Chromefile = new File("resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", Chromefile.getAbsolutePath());
 		
 		

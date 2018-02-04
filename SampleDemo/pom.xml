@@ -7,6 +7,112 @@
   <version>1.0-SNAPSHOT</version>
   <name>SampleDemo</name>
   <url>http://maven.apache.org</url>
+  <build>
+  <plugins>
+  	<plugin>
+	      <artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-eclipse-plugin</artifactId>
+			<version>2.10</version>
+			<configuration>
+			<downloadSources>true</downloadSources>
+			<downloadJavadocs>false</downloadJavadocs>
+			</configuration>
+			</plugin>
+			<plugin>
+				 <groupId>org.apache.maven.plugins</groupId>
+                 <artifactId>maven-assembly-plugin</artifactId>
+                 <version>3.1.0</version>
+				<!-- i need add back -->
+				<executions>
+				<execution>
+				<id>make-assembly</id>
+				<phase>package</phase>
+				<goals>
+				<goal>single</goal>
+				</goals>
+				<configuration>
+				    <archive>
+				    <manifest>
+				    <mainClass>com.test.RunReverse</mainClass>
+				    <!--  mainClass>com.test.DispalyFood</mainClass>-->
+				    <!-- mainClass>com.test.RunWordFile</mainClass> -->
+				    </manifest>
+				    </archive>
+				    <descriptorRefs>
+				    <descriptorRef>jar-with-dependencies</descriptorRef>
+				    </descriptorRefs>
+				    <finalName>RunReverse</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+				</configuration> 
+				</execution>
+				
+				<execution>
+				<id>make-assembly2</id>
+				<phase>package</phase>
+				<goals>
+				<goal>single</goal>
+				</goals>
+				<configuration>
+				    <archive>
+				    <manifest>
+				    <!--  mainClass>com.test.RunReverse</mainClass>-->
+				    <!--  mainClass>com.test.DispalyFood</mainClass>-->
+				    <mainClass>com.test.RunWordFile</mainClass>
+				    </manifest>
+				    </archive>
+				    <descriptorRefs>
+				    <descriptorRef>jar-with-dependencies</descriptorRef>
+				    </descriptorRefs>
+				    <finalName>RunWordFile</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+				</configuration> 
+				</execution>
+				
+				<execution>
+				<id>make-assembly3</id>
+				<phase>package</phase>
+				<goals>
+				<goal>single</goal>
+				</goals>
+				<configuration>
+				    <archive>
+				    <manifest>
+				    <mainClass>com.test.RunDisplayFood</mainClass>
+				    </manifest>
+				    </archive>
+				    <descriptorRefs>
+				    <descriptorRef>jar-with-dependencies</descriptorRef>
+				    </descriptorRefs>
+				    <finalName>RunDisplayFood</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+				</configuration> 
+				</execution>
+				
+				</executions>
+			</plugin>
+		</plugins>
+		<resources>
+         <resource>
+         <filtering>false</filtering>
+             <directory>${basedir}/resources</directory>
+             <targetPath>${basedir}/target/resources/</targetPath>
+             <includes>
+                 <include>*.*</include>
+                 <include>*.exe</include>
+             </includes>
+         </resource>
+     </resources>
+		
+  </build>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

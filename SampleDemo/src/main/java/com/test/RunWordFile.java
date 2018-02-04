@@ -14,7 +14,8 @@ public class RunWordFile {
 	 */
 	public static void main(String[] args) {
 
-	    String file ="src/main/java/resource/datafile/Wordfile.txt";
+	    String file ="resources/Wordfile.txt";
+		//String file ="../resources/Wordfile.txt";
 		
 		WordFile f = new WordFile();
 		System.out.println("Exercises 3  Demo");
