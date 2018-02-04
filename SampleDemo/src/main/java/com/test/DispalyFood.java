@@ -28,7 +28,7 @@ public class DispalyFood {
 		
 		FoodPage food = new FoodPage(driver);
 		
-		System.out.println("Excesise 2 Demo");
+		System.out.println("Exercises 2 Demo");
 		
 		System.out.println("Printi 3rd and 5th numbers food items from the list ");
 		food.findFood();
